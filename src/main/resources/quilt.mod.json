@@ -15,7 +15,8 @@
 				"issues": "https://github.com/bluereflega/barrier/issues",
 				"sources": "https://github.com/bluereflega/barrier"
 			},
-			"icon": "assets/barrier/icon.png"
+			"icon": "assets/barrier/icon.png",
+			"license": "MIT"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
