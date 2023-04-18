@@ -20,7 +20,7 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "io.github.bluereflega.barrier.Barrier"
+			"init": "io.github.bluereflega.barrier.BarrierMod"
 		},
 		"depends": [
 			{
