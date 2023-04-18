@@ -1,6 +1,6 @@
 package io.github.bluereflega.barrier;
 
-import io.github.bluereflega.barrier.item.ModItems;
+import io.github.bluereflega.barrier.item.custom.BarrierItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,7 +17,7 @@ public class BarrierMod implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("Barrier Mod");
 
-	public static final Item BARRIER = new Item(new QuiltItemSettings());
+	public static final Item BARRIER = new BarrierItem(new QuiltItemSettings());
 
 	@Override
 	public void onInitialize(ModContainer mod) {
