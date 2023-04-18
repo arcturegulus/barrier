@@ -43,17 +43,17 @@ public class BarrierItem extends Item {
 		double playerY = player.getY() + (player.getHeight() / 2);
 		double playerZ = player.getZ();
 
-		double max_zenith = 180.0;
-		double max_azimuth = 360.0;
+		double maxZenith = 180.0;
+		double maxAzimuth = 360.0;
 
 		double radius = 1.1;
-		int zenith_lines = 10;
-		int azimuth_lines = zenith_lines * 2;
+		int zenithSteps = 10;
+		int azimuthSteps = zenithSteps * 2;
 
-		for (int zenith_line = 0; zenith_line <= zenith_lines; zenith_line++) {
-			for (int azimuth_line = 0; azimuth_line <= azimuth_lines; azimuth_line++) {
-				double zenith = max_zenith * ((double) (zenith_line) / zenith_lines);
-				double azimuth = max_azimuth * ((double) (azimuth_line) / azimuth_lines);
+		for (int zenithStep = 0; zenithStep <= zenithSteps; zenithStep++) {
+			for (int azimuthStep = 0; azimuthStep <= azimuthSteps; azimuthStep++) {
+				double zenith = maxZenith * ((double) (zenithStep) / zenithSteps);
+				double azimuth = maxAzimuth * ((double) (azimuthStep) / azimuthSteps);
 
 				world.addParticle(
 					// TODO: use dust particle instead of end rod particle
